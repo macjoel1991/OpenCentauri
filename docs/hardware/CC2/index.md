@@ -11,6 +11,3 @@
     Machine size|398x404x490mm
 
 ![CC2 electronics compartment](./assets/cc2_ebox.jpg){ width="800" }
-/// caption
-Credit to keefe826 on the OpenCentauri Discord.
-///

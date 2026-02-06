@@ -36,6 +36,7 @@ nav:
       - Bed: hardware/CC1/bed.md
       - Screen: hardware/CC1/screen.md
       - Miscellaneous: hardware/CC1/misc.md
+      - Official Documentation: hardware/CC1/documentation.md
     - CC2:
       - Hardware: hardware/CC2/index.md
       - Mainboard: hardware/CC2/mainboard.md
@@ -43,6 +44,7 @@ nav:
       - Screen: hardware/CC2/screen.md
       - Miscellaneous: hardware/CC2/misc.md
       - CANVAS: hardware/CC2/CANVAS.md
+      - Official Documentation: hardware/CC2/documentation.md
 
   - Software: 
     - Software: software/index.md

@@ -59,5 +59,9 @@ Filament detector boards are sent along the filament path for each channel and a
 
 ## Spool Holders
 
+Canvas spool holders are secured to the frame by means of two holes tapped into the vertical extrusions. They are mechanically similar to Flashforge IFS spool holders and have an internal spring to rewind filament to prevent tangling during filament unloading.
+
 ## Filament Multiplexer
+
+The filament multiplexer is mounted directly to the extruder housing with a 4mm OD metal tube at the bottom of the multiplexer replacing the PTFE reverse Bowden tubing. This positioning enables shorter swap times due to reduce retraction distance during load/unload cycles. The CC2 appears to be able to detect if the multiplexer is installed by means of a rear facing Hall effect sensor at the top of the [Filament Detector PCB](../toolhead/#filament-detector-board)
 
