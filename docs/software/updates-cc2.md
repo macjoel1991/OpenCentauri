@@ -1,6 +1,20 @@
 # CC2 update archive
 
-### v01.03.16.89 (Released 09/01/2026)
+## Updating locally (via USB)
+
+1. Download a firmware from one of the packageUrl's in the [Firmware update archive](#firmware-update-archive) section.
+3. Plug in a USB thumb drive and put the just downloaded file on the root of the USB.
+4. Plug the USB thumb drive into the Centauri Carbon 2.
+5. Navigate to Settings, `Check for Updates`, `Offline Update`, and select the downloaded update.
+
+![localupdate](../assets/localupdate2.jpg){ width="400" }
+/// caption
+Credit to foggingweeb on the OpenCentauri Discord.
+///
+
+## Firmware update archive
+
+### v01.03.01.89 (Released 09/01/2026)
 [Download Global (abroad)](https://github.com/suchmememanyskill/cc2-firmwares/raw/refs/heads/main/cc2-01.03.01.89-18d82e89afe354a5801102751e838fcb-release-abroad.zip.sig){  referrerpolicy="no-referrer" .md-button .md-button--primary }
 [Download China (homeland)](https://github.com/suchmememanyskill/cc2-firmwares/raw/refs/heads/main/cc2-01.03.01.89-18d82e89afe354a5801102751e838fcb-release-homeland.zip.sig){  referrerpolicy="no-referrer" .md-button .md-button--primary }
 
