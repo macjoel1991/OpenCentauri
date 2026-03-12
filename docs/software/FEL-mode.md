@@ -53,7 +53,7 @@ There are two methods to boot into FEL mode:
 
 Press the reset button while shorting R53 with tweezers. The board should boot into FEL mode and connect to your PC.
 
-![FEL_MODE](../assets/FelMode.jpg){ width="400" }
+![FEL_MODE](assets/FelMode.jpg){ width="400" }
 
 When successful, you should see on the UART console:
 
