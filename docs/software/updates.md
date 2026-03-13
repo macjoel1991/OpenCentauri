@@ -22,12 +22,16 @@ Note: Instead of using `update.bin`, you can also use `update/update.swu`.
 2. Run [the unpack.py python script](../assets/unpack.py) to unpack the update
     - Usage: `python unpack.py <filename> <key> <iv>`
     - Note: Needs the openssl commandline installed
+    - Alternatively, use the online unpacker below
 3. You will get an `update.swu` file. You can open this file in 7zip. This archive contains all partitions that will be replaced during an update.
 
 ![update contents](../assets/swu.png){ width="400" }
 /// caption
 Credit to Sims on the OpenCentauri Discord.
 ///
+
+??? "Online Firmware unpacker"
+    <iframe src="/extras/cc1_update_decrypt.html" width="100%" height="500"></iframe>
 
 The Centauri Carbon makes use of an A/B partition scheme. When an update is applied, the update is applied to the inactive slot. After the update is applied, the machine switches A/B around so the next boot uses the previously inactive slot. The Centuari Carbon makes use of `swupdate` for updates.
 
