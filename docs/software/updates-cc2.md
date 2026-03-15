@@ -2,10 +2,11 @@
 
 ## Updating locally (via USB)
 
-1. Download a firmware from one of the packageUrl's in the [Firmware update archive](#firmware-update-archive) section.
-3. Plug in a USB thumb drive and put the just downloaded file on the root of the USB.
-4. Plug the USB thumb drive into the Centauri Carbon 2.
-5. Navigate to Settings, `Check for Updates`, `Offline Update`, and select the downloaded update.
+1. Download a firmware from the [Firmware update archive](#firmware-update-archive) section.
+2. Plug in a USB thumb drive and put the just downloaded file on the root of the USB.
+    - You do not need to decrypt/unpack this update. Place the `.zip.sig` file on the USB.
+3. Plug the USB thumb drive into the Centauri Carbon 2.
+4. Navigate to Settings, `Check for Updates`, `Offline Update`, and select the downloaded update.
 
 ![localupdate](../assets/localupdate2.jpg){ width="400" }
 /// caption
@@ -13,6 +14,8 @@ Credit to foggingweeb on the OpenCentauri Discord.
 ///
 
 ## Decrypting & Unpacking updates
+
+*Note: This is for firmware research only*
 
 The Centauri Carbon 2 delivers its updates in a .zip.sig format. Their .sig format seems to be an encryption/metadata wrapper around a file. Inside the zip 2 files can be found:
 

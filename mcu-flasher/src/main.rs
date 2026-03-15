@@ -34,6 +34,10 @@ struct Args {
     #[arg(long, default_value_t = 115200)]
     pub baud: u32,
 
+    // Serial port timeout in seconds (minimum 1)
+    #[arg(long, default_value_t = 2, value_parser = clap::value_parser!(u32).range(1..))]
+    pub timeout: u32,
+
     // Path to the device
     #[arg(required = true)]
     pub device: String,
@@ -89,7 +93,7 @@ fn main() {
     }
 
     let mut port = serialport::new(&args.device, args.baud)
-        .timeout(std::time::Duration::from_secs(10))
+        .timeout(std::time::Duration::from_secs(args.timeout as u64))
         .dtr_on_open(true)
         .open()
         .expect("Failed to open port");
