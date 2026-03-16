@@ -1,0 +1,13 @@
+[package]
+name = "camera-led-bridge"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nix = { version = "0", features = ["ioctl"] }
+
+[profile.release]
+strip = true
+lto = true
+opt-level = "z"
+codegen-units = 1
