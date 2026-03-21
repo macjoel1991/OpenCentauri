@@ -5,6 +5,8 @@ edition = "2021"
 
 [dependencies]
 nix = { version = "0", features = ["ioctl"] }
+ureq = { version = "3", default-features = false, features = ["json"] }
+serde = { version = "1", features = ["derive"] }
 
 [profile.release]
 strip = true

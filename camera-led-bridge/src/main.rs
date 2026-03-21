@@ -5,6 +5,7 @@ use std::thread;
 use std::time::Duration;
 
 use nix::ioctl_readwrite;
+use serde::Deserialize;
 
 const V4L2_CTRL_CLASS_USER: u32 = 0x00980000;
 const V4L2_CID_BASE: u32 = V4L2_CTRL_CLASS_USER | 0x900;
@@ -19,8 +20,29 @@ struct V4l2Control {
 // VIDIOC_S_CTRL = _IOWR('V', 28, struct v4l2_control)
 ioctl_readwrite!(vidioc_s_ctrl, b'V', 28, V4l2Control);
 
-const GPIO_PIN: u32 = 207;
-const POLL_INTERVAL: Duration = Duration::from_millis(500);
+const POLL_INTERVAL: Duration = Duration::from_secs(2);
+const LED_QUERY_URL: &str = "http://localhost/printer/objects/query?led%20case";
+
+#[derive(Deserialize)]
+struct QueryResponse {
+    result: QueryResult,
+}
+
+#[derive(Deserialize)]
+struct QueryResult {
+    status: QueryStatus,
+}
+
+#[derive(Deserialize)]
+struct QueryStatus {
+    #[serde(rename = "led case")]
+    led_case: LedCase,
+}
+
+#[derive(Deserialize)]
+struct LedCase {
+    color_data: Vec<Vec<f64>>,
+}
 
 /// Open /dev/video0 and set V4L2_CID_BACKLIGHT_COMPENSATION to `light_state`.
 fn camera_control_light(light_state: bool) -> io::Result<()> {
@@ -47,28 +69,41 @@ fn camera_control_light(light_state: bool) -> io::Result<()> {
     Ok(())
 }
 
-/// Read the current value of a sysfs GPIO pin.
-/// Returns `true` for high (1) and `false` for low (0).
-fn read_gpio(pin: u32) -> io::Result<bool> {
-    let path = format!("/sys/class/gpio/gpio{}/value", pin);
-    let raw = fs::read_to_string(&path)?;
-    let value: u8 = raw.trim().parse().map_err(|e| {
-        io::Error::new(io::ErrorKind::InvalidData, e)
-    })?;
-    Ok(value != 0)
+/// Query the LED state from the Moonraker API.
+/// Returns `true` if any channel in color_data is above 0.
+fn query_led_state() -> Result<bool, Box<dyn std::error::Error>> {
+    let response: QueryResponse = ureq::get(LED_QUERY_URL)
+        .call()?
+        .body_mut()
+        .read_json()?;
+
+    let lit = response
+        .result
+        .status
+        .led_case
+        .color_data
+        .iter()
+        .flatten()
+        .any(|&v| v > 0.0);
+    Ok(lit)
 }
 
-fn main() -> io::Result<()> {
-    let _ = fs::write("/sys/class/gpio/export", GPIO_PIN.to_string());
+fn main() {
     let mut last_state = false;
 
     loop {
         thread::sleep(POLL_INTERVAL);
 
-        let current_state = read_gpio(GPIO_PIN)?;
+        let current_state = match query_led_state() {
+            Ok(s) => s,
+            Err(e) => {
+                eprintln!("Failed to query LED state: {}", e);
+                continue;
+            }
+        };
 
         if current_state != last_state {
-            println!("GPIO state changed: {} -> {}", last_state, current_state);
+            println!("LED state changed: {} -> {}", last_state, current_state);
             last_state = current_state;
             if let Err(e) = camera_control_light(current_state) {
                 eprintln!("Failed to control camera light: {}", e);
