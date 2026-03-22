@@ -10,13 +10,13 @@
 
     Install a patched version of Elegoo's firmware that contains fixes for bugs and unwanted behaviour. No extra hardware required!
 
--   :material-tools:{ .lg .middle } __Klipper via mainboard replacement__
+-   :material-tools:{ .lg .middle } __Klipper Conversion__
 
     ---
 
-    [:octicons-arrow-right-24: Set up a replacement mainboard](/klipper-via-mainboard-replacement/)
+    [:octicons-arrow-right-24: Convert to Klipper](/klipper-conversion/)
 
-    Run full klipper by replacing your mainboard using off-the-shelf parts. 
+    See the options available to convert to Full Klipper.
 
 -   :material-nut:{ .lg .middle } __Hardware documentation__
 
@@ -30,7 +30,7 @@
 
     ---
 
-    [:octicons-arrow-right-24: Read up on the software stack](/software)
+    [:octicons-arrow-right-24: Read up on the Official Firmware](/software)
 
     Information about the software stack used on the Centauri Carbon.
 

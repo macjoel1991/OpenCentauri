@@ -63,5 +63,28 @@ Canvas spool holders are secured to the frame by means of two holes tapped into 
 
 ## Filament Multiplexer
 
-The filament multiplexer is mounted directly to the extruder housing with a 4mm OD metal tube at the bottom of the multiplexer replacing the PTFE reverse Bowden tubing. This positioning enables shorter swap times due to reduce retraction distance during load/unload cycles. The CC2 appears to be able to detect if the multiplexer is installed by means of a rear facing Hall effect sensor at the top of the [Filament Detector PCB](../toolhead/#filament-detector-board)
+The filament multiplexer is mounted directly to the extruder housing with a 4mm OD metal tube at the bottom of the multiplexer replacing the PTFE reverse Bowden tubing. This positioning enables shorter swap times due to reduce retraction distance during load/unload cycles.
 
+![Filament multiplexer](./assets/hubmounted.jpg){ width="400" }
+/// caption
+The Filament multiplexer mounted, with the filament detector PCB tab and tangle detection sensor in front of it.
+///
+
+The CC2 detects tangles by means of a rear facing Hall effect sensor at the top of the [Filament Detector PCB](../toolhead/#filament-detector-board). When filament is tangled a small metal tab extends from the filament multiplexer, activating the tangle sensor.
+
+![tangle detection tab](./assets/hubmechanism.jpg){ width="600" }
+/// caption
+The multiplexer tangle detection tab shown in non-triggered (left), and triggered (right) positions. Credit to laser_velociraptor on the Elegoo Discord.
+///
+
+The multiplexer uses a spring loaded mechanism to maintain the pneumatic fitting hub against the top surface of the multiplexer housing. When a tangle occurs the extruder continues increasing filament tension until it exceeds the force applied by the spring. The spring is compressed thus pushing the metal tab in front of the Hall effect sensor, triggering a tangle error and pausing the print.
+
+![Multiplexer internals](./assets/hubinternals.jpg){ width="600" }
+/// caption
+Multiplexer internals. Credit to laser_velociraptor on the Elegoo Discord.
+///
+
+![Multiplexer schematic diagram](./assets/hubdiagram.jpg){ width="600" }
+/// caption
+A schematic diagram showing the filament hub operation in non-triggered (left), and triggered (right) positions. Credit to baconmilkshake on the OpenCentauri Discord.
+///
