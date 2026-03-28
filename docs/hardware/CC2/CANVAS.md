@@ -1,3 +1,5 @@
+# CC2 CANVAS
+
 ## Overview
 
 CANVAS is a multimaterial/multicolor module for the Centauri Carbon 2. It employs a Type B design based on [Happy-Hare nomenclature](https://github.com/moggieuk/Happy-Hare/wiki/Conceptual-MMU) with a filament multiplexer proximal to the toolhead for minimal retraction distance.
@@ -24,7 +26,7 @@ CANVAS internals. Credit to u/CalligrapherLoud778 on the Elegoo subreddit.
 CANVAS motors. Credit to u/CalligrapherLoud778 on the Elegoo subreddit.
 ///
 
-###CANVAS Mainboard
+### CANVAS Mainboard
 
 Metric|Value
 ---|---
@@ -63,14 +65,14 @@ Canvas spool holders are secured to the frame by means of two holes tapped into 
 
 ## Filament Multiplexer
 
-The filament multiplexer is mounted directly to the extruder housing with a 4mm OD metal tube at the bottom of the multiplexer replacing the PTFE reverse Bowden tubing. This positioning enables shorter swap times due to reduce retraction distance during load/unload cycles.
+The filament multiplexer is mounted directly to the extruder housing with a 4mm OD metal tube at the bottom of the multiplexer replacing the PTFE reverse Bowden tubing. This positioning enables shorter swap times due to reduced retraction distance during load/unload cycles.
 
 ![Filament multiplexer](./assets/hubmounted.jpg){ width="400" }
 /// caption
 The Filament multiplexer mounted, with the filament detector PCB tab and tangle detection sensor in front of it.
 ///
 
-The CC2 detects tangles by means of a rear facing Hall effect sensor at the top of the [Filament Detector PCB](../toolhead/#filament-detector-board). When filament is tangled a small metal tab extends from the filament multiplexer, activating the tangle sensor.
+The CC2 detects tangles by means of a rear facing Hall effect sensor at the top of the [Filament Detector PCB](toolhead.md#filament-detector-board). When filament is tangled a small metal tab extends from the filament multiplexer, activating the tangle sensor.
 
 ![tangle detection tab](./assets/hubmechanism.jpg){ width="600" }
 /// caption

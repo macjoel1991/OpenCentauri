@@ -8,7 +8,7 @@
 
 ## Installation
 
-1. Open op OrcaSlicer
+1. Open OrcaSlicer
 2. Edit your printer profile (Edit icon next to `Elegoo Centauri Carbon 0.4 nozzle`)
 3. Turn on the advanced toggle
 4. Go to Machine G-code

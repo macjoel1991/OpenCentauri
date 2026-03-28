@@ -1,10 +1,12 @@
+# CC1 Miscellaneous
+
 ## Fan Box
 
 Metric|Value
 ---|---
-Auxillary fan type|7530mm radial fan, 2 pin
-Auxillary fan P/N|EFC-07E24W
-Auxillary fan power|0.65A @ 24V
+Auxiliary fan type|7530mm radial fan, 2 pin
+Auxiliary fan P/N|EFC-07E24W
+Auxiliary fan power|0.65A @ 24V
 Exhaust fan type|8020 radial fan, 2 pin
 Exhaust fan P/N|EFC-08D24M
 Exhaust fan power|0.15A @ 24V
@@ -13,7 +15,7 @@ Exhaust fan power|0.15A @ 24V
 
 Metric|Value
 ---|---
-Configuration|Parellel
+Configuration|Parallel
 Voltage|24V
 Current|58 mA (29 mA per strip)
 Power|1.4W

@@ -1,3 +1,5 @@
+# CC1 Hardware
+
 <div class="grid cards" markdown>
 
 -   Centauri Carbon Printer specifications:

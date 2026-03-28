@@ -6,7 +6,7 @@
 
     ---
 
-    [:octicons-arrow-right-24: Download Printable Replacement Parts](../mods/optimized_parts.md)
+    [:octicons-arrow-right-24: Download Printable Replacement Parts](./optimized_parts.md)
 
     Download FDM-optimized versions of the official Elegoo parts.
 
@@ -14,7 +14,7 @@
 
     ---
 
-    [:octicons-arrow-right-24: Download Printable Mods and Replacement Parts](../mods/printable_mods.md)
+    [:octicons-arrow-right-24: Download Printable Mods and Replacement Parts](./printable_mods.md)
 
     Download community-designed printable mods
 
@@ -22,7 +22,7 @@
 
     ---
 
-    [:octicons-arrow-right-24: LED and Lighting modifications](../mods/light_mods.md)
+    [:octicons-arrow-right-24: LED and Lighting modifications](./light_mods.md)
 
     Improve visibility with toolhead mounted lighting directly on the OEM supplementary board.
 

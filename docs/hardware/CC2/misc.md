@@ -1,12 +1,14 @@
+# CC2 Miscellaneous
+
 ## Aux Fan
 
 Metric|Value
 ---|---
-Auxillary fan type|12032 radial fan, 4 pin (tach+5V PWM)
-Auxillary fan P/N|
-Auxillary fan power|
+Auxiliary fan type|12032 radial fan, 4 pin (tach+5V PWM)
+Auxiliary fan P/N|
+Auxiliary fan power|
 
-The CC2 Aux fan is mounted on the left panel with intake below the from the lower half of the chamber. This enables its use for heat soaking the printer and reduces external noise compared to the external intake aux fan on the CC1.
+The CC2 Aux fan is mounted on the left panel with intake from the lower half of the chamber. This enables its use for heat soaking the printer and reduces external noise compared to the external intake aux fan on the CC1.
 
 ![CC2 Aux fan](./assets/cc2_auxfan.jpg){ width="800" }
 /// caption

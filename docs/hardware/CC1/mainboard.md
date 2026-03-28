@@ -1,3 +1,5 @@
+# CC1 Mainboard
+
 Metric|Value
 ---|---
 SoC|AllWinner R528-S3
@@ -197,7 +199,7 @@ Type: JST-**XHB**-2P
 |2| + | +24V||
 
 
-### Bed temperature sensoor "BED-T"
+### Bed temperature sensor "BED-T"
 Type: JST-**XHB**-2P
 
 |pin nr|marking|Function|remarks|

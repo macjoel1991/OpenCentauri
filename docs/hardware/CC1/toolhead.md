@@ -1,3 +1,5 @@
+# CC1 Toolhead
+
 Front|Back
 ---|---
 ![Toolhead board image](./assets/centauri-hotend.jpg){ width="800" }|![Toolhead board back image](./assets/centauri-hotend-back.jpg){ width="800" }

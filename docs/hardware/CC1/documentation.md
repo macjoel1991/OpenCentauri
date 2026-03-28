@@ -1,3 +1,5 @@
+# CC1 Documentation
+
 [CC1 official English user manual](https://raw.githubusercontent.com/OpenCentauri/tools/refs/heads/main/pdf/CC1_manual.pdf)
 
 [CC1 official English toolhead service guide](https://raw.githubusercontent.com/OpenCentauri/tools/refs/heads/main/pdf/CC1_toolhead_manual.pdf)

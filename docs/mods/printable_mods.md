@@ -1,8 +1,10 @@
+# Printable Mods
+
 ## Risers and Strain Relief
 
 **Cable Arm Riser and Vertical Strain Relief**
 
-Daniel Cherubini's [vertical strain relief](https://www.printables.com/model/1447575-elegoo-centarui-carbon-usb-cable-strain-guide) and Devin's Cable arm risers (eg. [1](https://www.printables.com/model/1450583-centauri-carbon-cable-arm-sturdy-riser), [2](https://www.printables.com/model/1412274-elegoo-centauri-carbon-low-riser-remix-fixed), [3](https://www.printables.com/model/1452465-centauri-carbon-cable-arm-vented-riser) ) are the currently recommended solutions to adress the failure-prone USB cable on the CC1.
+Daniel Cherubini's [vertical strain relief](https://www.printables.com/model/1447575-elegoo-centarui-carbon-usb-cable-strain-guide) and Devin's Cable arm risers (eg. [1](https://www.printables.com/model/1450583-centauri-carbon-cable-arm-sturdy-riser), [2](https://www.printables.com/model/1412274-elegoo-centauri-carbon-low-riser-remix-fixed), [3](https://www.printables.com/model/1452465-centauri-carbon-cable-arm-vented-riser) ) are the currently recommended solutions to address the failure-prone USB cable on the CC1.
 
 ![cable arm riser and vertical strain relief installed](./assets/cablearm.jpg){ width="300" }
 
@@ -17,7 +19,7 @@ Three popular types of alternate hotends/extruders. From left to right Microswis
 
 **Microswiss Flowtech**
 
-A [commercial solution](https://store.micro-swiss.com/products/flowtech-hotend-for-elegoo-centauri-carbon) using flowtech nozzles and similar heatblock to that used on the bamulab X1/P1 flowtech hotend. Allows use of CHT nozzles, but has a shorter melt zone than the stock CC hotend. 
+A [commercial solution](https://store.micro-swiss.com/products/flowtech-hotend-for-elegoo-centauri-carbon) using flowtech nozzles and a similar heatblock to that used on the Bambu Lab X1/P1 flowtech hotend. Allows use of CHT nozzles, but has a shorter melt zone than the stock CC hotend. 
 
 - Pros: Drop in compatibility, nozzle shared across other flowtech hotends, easy nozzle swaps, nonstructural heatbreak 
 - Cons: High cost, not compatible with CC2, may not be rated up to 320C.
@@ -50,6 +52,6 @@ The [gamma cover](https://www.printables.com/model/1410999-g-gamma-toolhead-cove
 [Another Centauri Carbon Toolhead Cover/ACCTC](https://www.printables.com/model/1575497-another-centauri-carbon-toolhead-cover) Is loosely derived from gamma as well as many other designs and is a highly mass-reduced toolhead shell, with rigid cover mounting using screws
 
 **SE3D**
-The [SE3D cover](https://www.printables.com/model/1399340-se3d-elegoo-centauri-carbon-toolhead-cover) was the first replacement cover for the centauri carbon and is a a moderately mass-reduced toolhead cover featuring dovetail peg and screw mounting, though numerous variants with alternate mountings and mass reductions are available.
+The [SE3D cover](https://www.printables.com/model/1399340-se3d-elegoo-centauri-carbon-toolhead-cover) was the first replacement cover for the centauri carbon and is a moderately mass-reduced toolhead cover featuring dovetail peg and screw mounting, though numerous variants with alternate mountings and mass reductions are available.
 
 

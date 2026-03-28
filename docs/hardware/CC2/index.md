@@ -1,3 +1,5 @@
+# CC2 Hardware
+
 
 -   Centauri Carbon 2 Printer specifications:
     

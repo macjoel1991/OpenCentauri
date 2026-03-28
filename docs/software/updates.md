@@ -2,7 +2,7 @@
 
 ## Updating locally (via USB)
 
-1. Download a firmware from one of the packageUrl's in the [Firmware update archive](#firmware-update-archive) section.
+1. Download a firmware from one of the package URLs in the [Firmware update archive](#firmware-update-archive) section.
 2. Rename the just downloaded file to `update.bin`.
 3. Plug in a USB thumb drive and put `update.bin` on the root of the USB.
 4. Plug the USB into the Centauri Carbon and power it on.
@@ -18,7 +18,7 @@ Note: Instead of using `update.bin`, you can also use `update/update.swu`.
 ## Decrypting & Unpacking updates
 *Need a hint on where to find the decryption key and iv? Look inside the python file...*
 
-1. Download a firmware from one of the packageUrl's in the [Firmware update archive](#firmware-update-archive) section.
+1. Download a firmware from one of the package URLs in the [Firmware update archive](#firmware-update-archive) section.
 2. Run [the unpack.py python script](../assets/unpack.py) to unpack the update
     - Usage: `python unpack.py <filename> <key> <iv>`
     - Note: Needs the openssl commandline installed
@@ -33,7 +33,7 @@ Credit to Sims on the OpenCentauri Discord.
 ??? "Online Firmware unpacker"
     <iframe src="/extras/cc1_update_decrypt.html" width="100%" height="500"></iframe>
 
-The Centauri Carbon makes use of an A/B partition scheme. When an update is applied, the update is applied to the inactive slot. After the update is applied, the machine switches A/B around so the next boot uses the previously inactive slot. The Centuari Carbon makes use of `swupdate` for updates.
+The Centauri Carbon makes use of an A/B partition scheme. When an update is applied, the update is applied to the inactive slot. After the update is applied, the machine switches A/B around so the next boot uses the previously inactive slot. The Centauri Carbon makes use of `swupdate` for updates.
 
 Internally, the following commands are used, where %s is the path to the .swu file:
 

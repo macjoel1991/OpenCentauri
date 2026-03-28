@@ -3,7 +3,7 @@
 ## Updating locally (via USB)
 
 1. Download a firmware from the [Firmware update archive](#firmware-update-archive) section.
-2. Plug in a USB thumb drive and put the just downloaded file on the root of the USB.
+2. Plug in a USB thumb drive and place the downloaded file in the root directory of the USB drive.
     - You do not need to decrypt/unpack this update. Place the `.zip.sig` file on the USB.
 3. Plug the USB thumb drive into the Centauri Carbon 2.
 4. Navigate to Settings, `Check for Updates`, `Offline Update`, and select the downloaded update.
@@ -17,10 +17,10 @@ Credit to foggingweeb on the OpenCentauri Discord.
 
 *Note: This is for firmware research only*
 
-The Centauri Carbon 2 delivers its updates in a .zip.sig format. Their .sig format seems to be an encryption/metadata wrapper around a file. Inside the zip 2 files can be found:
+The Centauri Carbon 2 delivers updates in a `.zip.sig` format. The `.sig` layer appears to be an encryption and metadata wrapper. Inside the zip, two files can be found:
 
 - `*.swu.sig`: The update package.
-- `*.json.sig`: Metadata information (like version) about other files in the .zip 
+- `*.json.sig`: Metadata information (such as version details) about other files in the zip.
 
 ??? "Online Firmware unpacker"
     <iframe src="/extras/cc2_update_decrypt.html" width="100%" height="500"></iframe>
@@ -30,7 +30,7 @@ The Centauri Carbon 2 delivers its updates in a .zip.sig format. Their .sig form
 Credit to Sims on the OpenCentauri Discord.
 ///
 
-The Centauri Carbon 2 makes use of an A/B partition scheme. When an update is applied, the update is applied to the inactive slot. After the update is applied, the machine switches A/B around so the next boot uses the previously inactive slot. The Centuari Carbon 2 makes use of `swupdate` for updates.
+The Centauri Carbon 2 employs an A/B partition scheme managed by `swupdate`. Updates are written to the inactive slot, which then becomes the primary boot partition upon the next restart.
 
 ## Firmware update archive
 

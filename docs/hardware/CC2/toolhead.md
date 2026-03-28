@@ -1,9 +1,11 @@
+# CC2 Toolhead
+
 ![Toolhead board image](./assets/cc2_toolheadboard.jpg){ width="800" }
 /// caption
 Credit to keefe826 on the OpenCentauri Discord.
 ///
 
-The toolhead board is connected over a USB-C cable. Unlike the CC1 serial is used instead of USB protocol for communication. The toolhead board is receives 24v power.
+The toolhead board is connected over a USB-C cable. Unlike the CC1, serial is used instead of USB protocol for communication. The toolhead board receives 24V power.
 
 
 
@@ -14,13 +16,15 @@ The toolhead board is connected over a USB-C cable. Unlike the CC1 serial is use
 Credit to keefe826 on the OpenCentauri Discord.
 ///
 
-The Toolhead board has an 2x4 pin port at the bottom of the board. This connector connects to a separate pcb, that breaks out the necessary connectors for the hotend (Temperature sensor, heater, hotend fan).
+The Toolhead board has a 2x4 pin port at the bottom. This connector links to a separate PCB that breaks out the required hotend connectors (temperature sensor, heater, and hotend fan).
 
 ## Filament Detector Board
 
 
 
-The CC2 has an additional filament detector board that connects to the bottom port on the opposite side of the supplementary board pins on the toolhead board. This board uses an optical sensor the detect the if filament has entered the extruder, a spring is soldered to the back side of the board that retains a lever that is actuated to block the optical sensor when filament enters the extruder. A new front and rear extruder shell are used to accommodate the filament detector and filament [multiplexer](../CANVAS/#filament-multiplexer). This board additionally hosts forward and rear facing hall effect sensors. The forward hall effect sensor is on the middle of the board and is used for toolhead cover detection by means of a small magnet that has been added to the CC2 toolhead. The rear hall effect sensor is on the top back side of the board and extends over the the multiplexer and is used for tangle detection by means of a spring loaded tab in the multiplexer that extends when and triggers the hall effect sensor when filament tension exceeds a certain level.
+The CC2 has an additional filament detector board connected to the bottom port on the opposite side of the supplementary board pins. It uses an optical sensor to detect filament entry into the extruder. A spring on the back of the board retains a lever that blocks the optical sensor when filament enters the extruder. A redesigned front and rear extruder shell accommodate both this detector board and the filament [multiplexer](CANVAS.md#filament-multiplexer).
+
+This board also includes forward- and rear-facing Hall effect sensors. The forward sensor, located near the middle of the board, detects the toolhead cover using a small magnet in the CC2 toolhead. The rear sensor, located near the top-back side of the board and extending over the multiplexer, is used for tangle detection. A spring-loaded tab in the multiplexer extends under filament tension and triggers this sensor once tension exceeds a threshold.
 
 
 ![Filament detector board image](./assets/cc2_filamentdetector.jpg){ width="800" }
@@ -40,7 +44,7 @@ Filament detector board annotated with hall effect-based cover detection. Credit
 
 ## Filament cutter actuation sensor
 
-A small board screwed into the hotend uses a hall effect sensor used to detect filament cutter actuation by a magnet mounted in the filament cutter arm. It is connected to the right side of the filament detector board.
+A small board screwed into the hotend uses a Hall effect sensor to detect filament cutter actuation via a magnet in the filament cutter arm. It connects to the right side of the filament detector board.
 
 ![Fan shroud board](./assets/cc2_fanductboard.jpg){ width="400" }
 /// caption
