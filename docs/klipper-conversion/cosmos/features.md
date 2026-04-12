@@ -42,13 +42,13 @@ Relevant files are:
 
 ## UI Configuration
 
-See `display.conf` for configuration on which user interface is used.
+See `cosmos.conf` for configuration on which user interface is used.
 
-GUI (screen) options:
+Screen options:
 
 - grumpyscreen
 
-WEBUI options:
+Webui options:
 
 - mainsail
 - fluidd
