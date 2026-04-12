@@ -34,6 +34,20 @@ The Centauri Carbon 2 employs an A/B partition scheme managed by `swupdate`. Upd
 
 ## Firmware update archive
 
+### v01.03.02.36 (Released 09/04/2026)
+[Download Global (abroad)](https://github.com/suchmememanyskill/cc2-firmwares/raw/refs/heads/main/cc2-01.03.02.36-ee76546c665bb272b43798813f60f8dd-release-abroad.zip.sig){  referrerpolicy="no-referrer" .md-button .md-button--primary }
+[Download China (homeland)](https://github.com/suchmememanyskill/cc2-firmwares/raw/refs/heads/main/cc2-01.03.02.36-ee76546c665bb272b43798813f60f8dd-release-homeland.zip.sig){  referrerpolicy="no-referrer" .md-button .md-button--primary }
+
+Changelog:
+
+1. Improved stability during device network connection and account binding process.
+1. Updated built-in filament parameters.
+1. Optimized print recovery quality after pause/resume.
+1. Enhanced error dialog logic for better user experience.
+1. Improved file switching smoothness when using USB drives.
+1. Fixed occasional 803 error that occurred in certain usage scenarios.
+1. Resolved intermittent "Printer Busy" issue after file upload.
+
 ### v01.03.01.89 (Released 09/01/2026)
 [Download Global (abroad)](https://github.com/suchmememanyskill/cc2-firmwares/raw/refs/heads/main/cc2-01.03.01.89-18d82e89afe354a5801102751e838fcb-release-abroad.zip.sig){  referrerpolicy="no-referrer" .md-button .md-button--primary }
 [Download China (homeland)](https://github.com/suchmememanyskill/cc2-firmwares/raw/refs/heads/main/cc2-01.03.01.89-18d82e89afe354a5801102751e838fcb-release-homeland.zip.sig){  referrerpolicy="no-referrer" .md-button .md-button--primary }
